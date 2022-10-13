@@ -25,5 +25,12 @@ public class FileLib {
 		return data;
 	
 	}
+	public String getExcelData1(String sheetname,int row,int cell) throws EncryptedDocumentException, IOException {
+		FileInputStream fis=new FileInputStream("./data/testscript.xlsx");
+		Workbook wb = WorkbookFactory.create(fis);
+		String data = wb.getSheet(sheetname).getRow(row).getCell(cell).getStringCellValue();
+		return data;
+	
+	}
 	
 }

@@ -26,13 +26,23 @@ static {
 	Reporter.log("openBrowser", true);	
 	 driver=new ChromeDriver();
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	 driver.manage().window().maximize();
-	 
-	
+	 driver.manage().window().maximize(); 
+	}
+	@BeforeTest
+	public void openBrowse1r() {
+	Reporter.log("openBrowser1", true);	
+	 driver=new ChromeDriver();
+	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 driver.manage().window().maximize(); 
 	}
 	@AfterTest
 	public void closeBrowser() {
 		Reporter.log("closeBrowser", true);	
+		driver.close();
+	}
+	@AfterTest
+	public void closeBrowser1() {
+		Reporter.log("closeBrowser1", true);	
 		driver.close();
 	}
 	@BeforeMethod
