@@ -51,7 +51,8 @@ static {
 		Reporter.log("logout", true);	
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
 		e.setLogout();
-		
+	    System.out.println("thank you");
+	    System.out.println("have a nice day");
 	}
 	
 }
