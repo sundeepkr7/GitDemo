@@ -25,6 +25,14 @@ public class FileLib {
 		return data;
 	
 	}
+	public String getProperty1Data(String key) throws IOException {
+		FileInputStream fis=new FileInputStream("./data/commondata.property");
+		Properties p=new Properties();
+		p.load(fis);
+		String data = p.getProperty(key);
+		System.out.println("second work by X guy");
+		return data;
+		}
 	public String getExcelData1(String sheetname,int row,int cell) throws EncryptedDocumentException, IOException {
 		FileInputStream fis=new FileInputStream("./data/testscript.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
