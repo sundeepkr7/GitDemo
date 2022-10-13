@@ -27,6 +27,7 @@ static {
 	 driver=new ChromeDriver();
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	 driver.manage().window().maximize();
+	 
 	
 	}
 	@AfterTest
@@ -50,6 +51,7 @@ static {
 		Reporter.log("logout", true);	
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
 		e.setLogout();
+		
 	}
 	
 }
