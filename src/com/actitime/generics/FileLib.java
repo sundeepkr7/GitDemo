@@ -15,6 +15,7 @@ public class FileLib {
 	Properties p=new Properties();
 	p.load(fis);
 	String data = p.getProperty(key);
+	System.out.println("second work by X guy");
 	return data;
 	}
 	public String getExcelData(String sheetname,int row,int cell) throws EncryptedDocumentException, IOException {

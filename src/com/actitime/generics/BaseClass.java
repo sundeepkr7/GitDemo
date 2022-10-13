@@ -53,6 +53,8 @@ static {
 		e.setLogout();
 	    System.out.println("thank you");
 	    System.out.println("have a nice day");
+	    //sundeep
+	    System.out.println("additional work by X guy");
 	}
 	
 }
